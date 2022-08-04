@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta name="author" content="Diamond Ali">
+				<title>Library</title>
+				<link rel="stylesheet" href="library.css"></link>
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+		<header>
+		  <div>
+		    <h1><span class="name"></span> Library</h1>
+		  </div>
+		</header>
+		<section id="nameForm">
+				<label><h3>What is your name? </h3></label>
+				<input type="text" class="nameValue" placeholder="First Name Only"><br>
+				<p class="warning">Enter a  name that is atleast 2 characters long</p>
+				<input type="button" class="continue" value="continue">
+		</section>
+		<section id="formSection">
+				<div>
+						<div class="close" >x</div>
+						<h2>Add New Book</h2>
+						<form>
+								<label class="label"  class="label"  for="title">Title</label><br>
+								<input 
+								type="text" 
+								name="title" 
+ 								placeholder="Book title"
+								id="title"
+								><br>
+								<label class="label"  for="author">Author</label><br>
+								<input 
+								type="text" 
+								name="author" 
+								placeholder ="author"
+								id="author"
+								><br>
+								<label class="label"  for="pages">Pages</label><br>
+								<input 
+								type="number" 
+								name="pages" 
+								placeholder ="pages"
+								id="pages"				
+								><br>
+								<label class="label"  for="select">Have you read the book</label><br>
+								<select name="select" id="read" required>
+										<option value="yes">Yes I have😊</option>
+										<option value="no">No I haven't😥</option>
+								</select> 
+								<input
+								type="button"
+								value="Submit"
+								id="submit"
+								>
+						</form>
+				</div>
+		</section>
+			<section id="edit">
+				<div>
+						<div class="closeEditForm" >x</div>
+						<h2>Edit Book</h2>
+						<form>
+								<label class="label"  for="title">Title</label><br>
+								<input 
+								type="text" 
+								name="title" 
+ 								placeholder="Book title"
+								class="editTitle"
+								><br>
+								<label class="label"  for="author">Author</label><br>
+								<input 
+								type="text" 
+								name="author" 
+								placeholder ="author"
+							  class="editAuthor"
+								><br>
+								<label class="label"  for="pages">Pages</label><br>
+								<input 
+								type="number" 
+								name="pages" 
+								placeholder ="pages"
+								class="editPages"				
+								><br>
+																<label class="label"  for="select">Change read status</label><br>
+																<select name="select" class="read" required>
+																  <option value="yes">Read✅</option>
+																  <option value="no">Not Read❌</option>
+																</select>
+								<input
+								type="button"
+								value="Add changes"
+								class="addChanges"
+								>
+						</form>
+				</div>
+		</section>
+		<section>
+		  <div class="confirmationMessage black">
+		    <h3>Delete Book</h3>
+		    <p>This action cannot be reversed!</p>
+		    <div class="choice">
+		       <p class="cancel">cancel</p>
+		       <p class="okay">continue</p>
+		    </div>
+		  </div>
+		</section>
+		<main id="bookShelf">
+				<!-- Add books here -->
+		</main> 
+		<footer>
+				<div  id="button" >+</div>
+		</footer>
+		<script src="library.js"></script>	
+</body>
+</html>

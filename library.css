@@ -1,0 +1,224 @@
+*{
+		font-family: 'Sen', sans-serif;
+}
+body{
+		margin:0;
+		padding:0;
+	 box-sizing:border-box;
+}
+header{
+  position:relative;
+  z-index:10;
+}
+main{
+		position:relative;
+		top:140px;
+		display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  color:white;
+  position:relative ; 
+}
+h1,h2,h3,h4,button, input[type ="button"] {
+		font-family: 'Prata', serif !important;
+}
+header div{
+		background:#05445E !important;
+		color:#0C120C;
+		position:fixed;
+		right:0;
+		left:0;
+}
+header h1{
+		font-weight:1000; 
+		padding-left: 15px;
+}
+html body{
+		background:#0C120C;
+}		
+#formSection, #edit{
+		position:fixed;
+   width:240px;
+		background:#067593;
+		top:10%;
+		left:62px;
+		border-radius:4px;
+		animation-name:increaseOpacity;
+		display:none;
+		z-index:10;
+		animation-duration:1s;
+		padding:20px 10px 20px 0;
+}
+#nameForm{
+		position:fixed;
+		top:35%;
+		width:300px;
+		background:#067593;
+		border-radius: 3px;
+		margin:0 6%;
+		font-size:1.2em ;
+		padding-left:15px;
+		display:none;
+}
+.warning{
+		color:red;
+		display:none;
+		font-size:0.5em;
+}
+#nameForm input {
+		width: 250px !important;
+		padding:10px;
+}
+#nameForm .continue{
+		width:270px !important;
+}
+#formSection h2, #edit h2{
+		padding-bottom:10px;
+		text-align:center;
+}
+section div .close, .closeEditForm{
+		font-weight:40;
+		font-size:2em;
+		padding:0;
+		position:fixed;
+		right:4px;
+		top:0px;
+}
+@keyframes increaseOpacity {
+		from{
+			transform:scale(0,0);
+	 	  opacity:0;
+		}
+		to{
+		transform:scale(1,1) ;
+		opacity:1;
+		}
+}
+section div{
+		margin:0 15px;
+		padding:15px 0;
+}
+section input{
+		width:200px;
+		padding:7px 8px;
+		font-size:13x;
+		background:#DFDFDF;
+		border:none;
+		outline:none;
+		border-radius:2px;
+		margin:2px 0 15px 0!important; 
+}
+section input[type ="button"]{
+		background:#05445E;
+		box-shadow:1px 1px 1px black;
+}
+section select{
+		width:200px;
+		padding:8px 0;
+		margin-bottom:32px;
+		border:none;
+		outline:none;
+		border-radius:2px;
+}
+#edit .read{
+		width:214px;
+}
+.bookContainer{
+  width:300px;
+  padding:10px 0 5px 10px;
+  background:#252525;
+  border-radius:5px;
+  box-sizing: border-box;
+  margin:0,24px;
+  box-sizing:border-box;
+  border-left:10px solid red;
+  transition:1s;
+  position:relative;
+  margin-bottom:40px  !important;
+}
+#bookShelf{
+		display: flex;
+		flex-flow:row wrap;
+		justify-content:space-around;
+}
+.update{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  padding:25px 20px 10px 10px;
+}
+.update  button{
+  padding:8px 5px;
+  width:110px;
+  border-radius:4px;
+  outline:none;
+  font-weight:600;
+  background:#05445E;
+  border-color:#05426E;
+  color:white;
+}
+footer div{
+		width:60px;
+		height:60px;
+		position:fixed;
+		bottom:30px;
+		right:28px;
+		border-radius:50%;
+		display:grid;
+		place-items:center;
+		font-weight:1000;
+		font-size:1.2em;
+		background:#05445E;
+		color:#0C120C;
+}
+.statusBtn {
+  display:flex;
+  flex-flow:row nowrap;
+}
+.statusBtn .bar{
+  width:60px;
+  height:16px;
+  border-radius:8px;
+  margin-left:20px;
+  margin-top:5px;;
+}
+.circle{
+  background:black;
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  position:absolute;
+  transition:1s;
+}
+.readStatus{
+  margin-left:20px;
+}
+.empty{
+  animation-name:red;
+  animation-duration:0.2s;
+  animation-iteration-count:infinite;
+}
+@keyframes red{
+  from{box-shadow:0 0 0 black}
+  to {box-shadow: 1px 1px 15px red}
+}
+.confirmationMessage{
+	position:fixed;
+	background:#05445E;
+   width:80%;
+	 margin-left:7%;
+	 top:30%;
+	 z-index:10;
+	 padding:3px 0 5px 20px;
+	 font-weight:500;
+	 display:none;
+}
+.confirmationMessage .choice{
+		display:flex;
+		flex-flow:row nowrap;
+		justify-content:flex-end;
+		align-items:flex-start;
+}
+.choice p{
+		margin:0 25px 0 0;
+}
