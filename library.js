@@ -122,7 +122,7 @@ function update() {
     book.circle.style.transition = "1s";
     book.readBook ? book.bar.style.background = "linear-gradient(to right, black,25%, green)" : book.bar.style.background = "linear-gradient(to right, red,75%, black)";
     book.readBook ? book.readStatus.innerHTML = "read✅" : book.readStatus.innerHTML = "not read❌"
-    book.readBook ? book.circle.style.marginLeft = "125px" : book.circle.style.marginLeft = "75px"
+    book.readBook ? book.circle.style.marginLeft = "125px" : book.circle.style.marginLeft = "70px"
     book.readBook ? book.bookContainer.style.borderLeftColor = "green" : book.bookContainer.style.borderLeftColor = "red";
     book.circle.onclick = () => {
       Library[index].read === "yes" ? Library[index].read = "no" : Library[index].read = "yes"
